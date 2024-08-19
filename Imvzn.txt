@@ -1,0 +1,99 @@
+Berikut adalah cara penggunaan bot Telegram yang telah Anda buat:
+
+1. Membuat Catatan Baru:
+   Perintah: `/newcatatan`
+   Langkah-langkah:
+     1. Ketik `/newcatatan` untuk memulai proses pembuatan catatan baru.
+     2. Bot akan meminta Anda memasukkan judul catatan. Ketik judul catatan yang Anda inginkan.
+     3. Setelah itu, bot akan meminta Anda memasukkan isi catatan. Ketik isi catatan sesuai keinginan Anda.
+     4. Jika sudah selesai, ketik `selesai` untuk menyimpan catatan. Bot akan memberi tahu Anda bahwa catatan telah disimpan di Firebase.
+
+2. Melihat Catatan:
+   Perintah: `/lihatcatatan <judul_catatan>`
+   Langkah-langkah:
+     1. Ketik `/lihatcatatan` diikuti dengan judul catatan yang ingin Anda lihat, misalnya: `/lihatcatatan Catatan Penting`.
+     2. Bot akan mencari catatan dengan judul yang Anda masukkan dan menampilkan isinya jika ditemukan.
+
+3. Menghapus Catatan:
+   Perintah: `/hapuscatatan <judul_catatan>`
+   Langkah-langkah:
+     1. Ketik `/hapuscatatan` diikuti dengan judul catatan yang ingin Anda hapus, misalnya: `/hapuscatatan Catatan Penting`.
+     2. Bot akan mencari dan menghapus catatan tersebut dari Firebase.
+
+4. Menambahkan Pengingat:
+   Perintah:`/tambahpengingat <judul_pengingat> <YYYY-MM-DDTHH:mm:ss>`
+   Langkah-langkah:
+     1. Ketik `/tambahpengingat` diikuti dengan judul pengingat dan waktu pengingat dalam format `YYYY-MM-DDTHH:mm:ss`, misalnya: `/tambahpengingat Rapat 2024-08-20T15:30:00`.
+     2. Bot akan menambahkan pengingat dan memberi tahu Anda bahwa pengingat telah diatur.
+
+5. Melihat Pengingat:
+   Perintah: `/lihatpengingat`
+   Langkah-langkah:
+     1. Ketik `/lihatpengingat`.
+     2. Bot akan menampilkan daftar pengingat yang telah Anda tambahkan.
+
+6. Menghapus Pengingat:
+   Perintah: `/hapuspengingat <judul_pengingat>`
+   Langkah-langkah:
+     1. Ketik `/hapuspengingat` diikuti dengan judul pengingat yang ingin Anda hapus, misalnya: `/hapuspengingat Rapat`.
+     2. Bot akan mencari dan menghapus pengingat tersebut dari Firebase.
+7. Mengupload Gambar Catatan:
+   Perintah: `/uploadgambar`
+   Langkah-langkah:
+     1. Ketik `/uploadgambar`.
+     2. Bot akan meminta Anda untuk mengupload gambar.
+     3. Upload gambar melalui Telegram, dan bot akan memberikan link gambar yang telah disimpan.
+
+Contoh Penggunaan:
+1. Membuat Catatan:
+   Pengguna:`/newcatatan`
+   Bot: `Masukkan judul catatan:`
+   Pengguna: `Catatan Rapat`
+   Bot: `Catatan berjudul "Catatan Rapat" telah dibuat. Silahkan masukkan isi catatan, dan ketik "selesai" jika sudah selesai:`
+   Pengguna:`Diskusi tentang proyek X`
+   Pengguna: `selesai`
+   Bot: `Catatan "Catatan Rapat" telah disimpan di Firebase.`
+
+2. Melihat Catatan:
+   Pengguna:`/lihatcatatan Catatan Rapat`
+   Bot: `Catatan "Catatan Rapat":\n\nDiskusi tentang proyek X`
+
+Berikut adalah contoh penggunaan perintah `/tambahpengingat`di bot Telegram Anda:
+
+Contoh Penggunaan `tambahpengingat`:
+
+1. Menambahkan Pengingat untuk Rapat:
+   Pengguna: `/tambahpengingat Rapat Tim 2024-08-20T15:30:00`
+   Bot: `Pengingat "Rapat Tim" telah ditambahkan untuk tanggal 20/08/2024, 15:30:00.`
+
+   Dalam contoh ini, Anda menambahkan pengingat untuk "Rapat Tim" yang dijadwalkan pada tanggal 20 Agustus 2024, pukul 15:30. Bot akan menyimpan pengingat ini di Firebase dan akan mengirimkan notifikasi ketika waktu tersebut tiba.
+
+2. Menambahkan Pengingat untuk Pengumpulan Tugas:
+   - Pengguna: `/tambahpengingat Pengumpulan Tugas 2024-08-25T09:00:00`
+   - Bot: `Pengingat "Pengumpulan Tugas" telah ditambahkan untuk tanggal 25/08/2024, 09:00:00.`
+
+   Di sini, Anda menambahkan pengingat untuk "Pengumpulan Tugas" pada tanggal 25 Agustus 2024, pukul 09:00. Bot akan memastikan bahwa Anda mendapatkan pengingat pada waktu yang telah ditentukan.
+
+Langkah-Langkah:
+
+1. Masukkan Perintah:
+   - Ketik `/tambahpengingat` diikuti oleh judul pengingat dan waktu dalam format `YYYY-MM-DDTHH:mm:ss`.
+
+2. Bot Menambahkan Pengingat:
+   - Bot akan memverifikasi format tanggal dan waktu, kemudian menyimpan pengingat ke Firebase.
+   - Bot akan memberi tahu Anda bahwa pengingat telah berhasil ditambahkan.
+
+3. Notifikasi Pengingat:
+   - Pada waktu yang ditentukan, bot akan secara otomatis mengirimkan pesan pengingat ke Anda dengan isi pengingat tersebut.
+
+Penjelasan Format Waktu:
+Format:`YYYY-MM-DDTHH:mm:ss`
+Contoh: `2024-08-20T15:30:00`
+  - 2024: Tahun
+  - 08: Bulan (Agustus)
+  - 20: Tanggal
+  - 15: Jam dalam format 24-jam (3 sore)
+  - 30: Menit
+  - 00: Detik
+
+Dengan contoh ini, Anda dapat melihat bagaimana cara menambahkan pengingat dengan bot Anda. Jika Anda membutuhkan bantuan lebih lanjut atau ada pertanyaan lain, silakan bertanya! 088225089622 selamat menikmati hari anda dengan bot IMVANZ-repository
